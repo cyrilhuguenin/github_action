@@ -5,7 +5,7 @@ on:
       - main
     pull_request:
       types: [closed, assigned, opened, reopened]
-  jobs:
+jobs:
     run-shell-command:
       runs-on: ubuntu-latest
       steps:
