@@ -1,6 +1,11 @@
-name: Récupération de la météo d'Etrez via cttr.in
+name: Récupération de la météo
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+      types: [closed, assigned, opened, reopened]
 
 jobs:
   greeting_job:
@@ -9,4 +14,4 @@ jobs:
       - name: "Récupération de la météo"
         run: curl wttr.in/$LOCATION
         env:
-          LOCATION: Lyon
+          LOCATION: Etrez
