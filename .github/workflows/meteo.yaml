@@ -1,0 +1,12 @@
+name: Récupération de la météo d'Etrez via cttr.in
+
+on: workflow_dispatch
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Récupération de la météo"
+        run: curl wttr.in/$LOCATION
+        env:
+          LOCATION: Lyon
