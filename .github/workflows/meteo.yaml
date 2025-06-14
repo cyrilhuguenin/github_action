@@ -8,7 +8,7 @@ on:
       types: [closed, assigned, opened, reopened]
 
 jobs:
-  greeting_job:
+  recuperation_meteo_Lyon:
     runs-on: ubuntu-latest
     steps:
       - name: "Récupération de la météo"
